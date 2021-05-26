@@ -1,10 +1,11 @@
+import React from 'react';
+
 import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 import './ExpenseItem.css';
 
 function ExpenseItem(props) {
-   
-
+  // const [title, setTitle] = useState(props.title); //react hook, usestate always returns an array with 2 elements
   return (
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
